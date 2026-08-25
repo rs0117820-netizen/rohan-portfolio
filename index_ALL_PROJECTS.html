@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rohan Sharma | Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f8f7f3;--ink:#27313a;--muted:#66727d;--accent:#c97857;--cream:#eee6d8;--white:#fff;--line:#e1ddd5}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans",Arial,sans-serif}a{text-decoration:none;color:inherit}
+nav{height:80px;display:flex;align-items:center;justify-content:space-between;max-width:1260px;margin:auto;padding:0 28px;border-bottom:1px solid var(--line)}
+.logo{font:700 30px "Playfair Display",serif}.logo span{color:var(--accent)}.links{display:flex;gap:27px;color:#59636d;font-size:15px}.links a:hover{color:var(--accent)}
+.wrap{max-width:1260px;margin:auto;padding:0 28px}.hero{min-height:730px;display:grid;grid-template-columns:1.05fr .95fr;gap:70px;align-items:center}
+.eyebrow,.small{font-size:13px;font-weight:700;letter-spacing:2.5px;color:var(--accent)}.eyebrow{margin-bottom:28px}
+h1{font:700 clamp(68px,8vw,118px)/.92 "Playfair Display",serif;letter-spacing:-5px;margin:0 0 25px}.intro{font-size:20px;line-height:1.75;color:#61707d;max-width:700px}
+.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px}.btn{padding:17px 25px;border:1px solid #6d747b;font-weight:700;font-size:15px}.btn.primary{background:var(--ink);color:#fff;border-color:var(--ink)}
+.photoBox{position:relative;padding:20px 0 34px 40px}.photoBox:before{content:"";position:absolute;inset:35px 40px 0 0;background:var(--cream);border-radius:48% 48% 15px 15px}
+.photo{position:relative;width:100%;max-width:510px;height:610px;object-fit:cover;border-radius:48% 48% 10px 10px;display:block;margin-left:auto}.tag{position:absolute;right:0;bottom:62px;background:rgba(255,255,255,.96);padding:20px 25px;width:300px;box-shadow:0 10px 30px rgba(30,35,40,.08)}.tag b{display:block;color:var(--accent);font-size:14px;letter-spacing:.7px;margin-bottom:8px}.tag span{color:#55616b;font-size:15px}
+section{padding:85px 0;border-top:1px solid var(--line)}.sectionTitle{font:700 50px "Playfair Display",serif;margin:10px 0 35px}.about{font-size:19px;line-height:1.8;color:#5f6974;max-width:850px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:rgba(255,255,255,.65);border:1px solid var(--line);padding:26px}.card small{color:var(--accent);font-weight:700;letter-spacing:1px}.card h3{margin:10px 0;font-size:21px}.card p{margin:0;color:#66717c;line-height:1.65}
+.timeline{display:grid;gap:18px}.job{background:#fffdf9;border:1px solid var(--line);padding:28px;display:grid;grid-template-columns:190px 1fr;gap:30px}.job .date{color:var(--accent);font-weight:700;font-size:14px;line-height:1.6}.job h3{margin:0 0 8px;font-size:22px}.job p{margin:0;color:#65707b;line-height:1.7}
+.cert{padding:0;overflow:hidden}.cert img{width:100%;height:185px;object-fit:cover;display:block;border-bottom:1px solid var(--line)}.certText{padding:20px}.certText h3{margin:8px 0 0}
+.contact{background:var(--cream);padding:55px}.contact .sectionTitle{margin-bottom:15px}footer{text-align:center;padding:30px;border-top:1px solid var(--line);color:#78818a}
+@media(max-width:850px){nav{padding:0 22px}.links{display:none}.wrap{padding:0 22px}.hero{grid-template-columns:1fr;gap:20px;padding:50px 0;min-height:auto}h1{letter-spacing:-3px}.photo{height:480px}.photoBox{padding-left:10px}.tag{bottom:25px}.grid{grid-template-columns:1fr}.job{grid-template-columns:1fr;gap:8px}.sectionTitle{font-size:40px}}
+</style>
+</head>
+<body>
+<nav><a class="logo" href="#">Rohan<span>.</span></a><div class="links">
+<a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#certificates">Certificates</a><a href="#contact">Contact</a><a href="Rohan_Sharma_CV.docx" download>Download CV</a>
+</div></nav>
+
+<main class="wrap">
+<section class="hero" style="border-top:0">
+<div><div class="eyebrow">HELLO, I'M</div><h1>Rohan<br>Sharma<span style="color:var(--accent)">.</span></h1>
+<p class="intro">An AI &amp; Machine Learning student who enjoys building practical solutions with Python, data and intelligent systems. I am continuously learning, experimenting and turning ideas into projects.</p>
+<div class="actions"><a class="btn primary" href="#projects">View My Work</a><a class="btn" href="Rohan_Sharma_CV.docx" download>Download My CV ↓</a><a class="btn" href="#contact">Get In Touch</a></div></div>
+<div class="photoBox"><img class="photo" src="rohan.jpg" alt="Rohan Sharma"><div class="tag"><b>AI &amp; ML STUDENT</b><span>Python • Data • Intelligent Systems</span></div></div>
+</section>
+
+<section id="about"><div class="small">01 / ABOUT</div><h2 class="sectionTitle">A little about me.</h2><p class="about">I am passionate about Artificial Intelligence, Machine Learning, data and software development. I enjoy learning new technologies and applying them to practical, real-world problems.</p></section>
+
+<section id="skills"><div class="small">02 / SKILLS</div><h2 class="sectionTitle">What I work with.</h2><div class="grid">
+<div class="card"><small>PROGRAMMING</small><h3>Python, C &amp; Java</h3><p>Building practical programs and strengthening problem-solving skills.</p></div>
+<div class="card"><small>DATA</small><h3>SQL &amp; MySQL</h3><p>Working with databases, queries and structured information.</p></div>
+<div class="card"><small>AI</small><h3>AI &amp; Machine Learning</h3><p>Exploring intelligent systems, data analytics and modern AI technologies.</p></div>
+</div></section>
+
+<section id="experience"><div class="small">03 / EXPERIENCE</div><h2 class="sectionTitle">Experience.</h2><div class="timeline">
+<div class="job"><div class="date">2026<br>6-WEEK VIRTUAL INTERNSHIP</div><div><h3>IBM SkillsBuild — Data Analytics with AI Intern</h3><p>Selected for the IBM SkillsBuild Data Analytics with AI Internship, a 6-week virtual internship in collaboration with AICTE and BharatCares, focused on developing data analytics and AI-related skills.</p></div></div>
+<div class="job"><div class="date">2026<br>SUCCESSCV</div><div><h3>SuccessCV — Team &amp; Platform Contributor</h3><p>Worked with the SuccessCV team on an AI-powered career platform featuring AI Resume Builder, AI Resume Analysis &amp; ATS Score, Resume-Based Job Recommendations and a Personalized Career Roadmap. Also participated in the Ad-Craft Challenge 2026 and promoted the submission on LinkedIn.</p></div></div>
+<div class="job"><div class="date">2026<br>6 MONTHS</div><div><h3>Campus Ambassador — Google Gemini</h3><p>Representing Google Gemini on campus and helping promote awareness, learning and engagement around AI and Gemini.</p></div></div>
+</div></section>
+
+<section id="projects"><div class="small">04 / SELECTED WORK</div><h2 class="sectionTitle">Projects.</h2><div class="grid">
+<div class="card"><small>FEATURED PROJECT</small><h3>Echo AI</h3><p>An intelligent voice assistant designed to understand natural interaction and assist with useful tasks.</p></div>
+<div class="card"><small>IBM SKILLSBUILD</small><h3>Data Analytics with AI</h3><p>Worked on practical data analytics and AI learning projects through the IBM SkillsBuild program, applying analytical thinking and AI concepts.</p></div>
+<div class="card"><small>GOOGLE GEMINI</small><h3>Gemini Campus Initiative</h3><p>Represented and promoted Google Gemini on campus while exploring AI tools, practical use cases and emerging technologies.</p></div>
+</div></section>
+
+<section id="certificates"><div class="small">05 / LEARNING</div><h2 class="sectionTitle">Certificates.</h2><div class="grid">
+<div class="card cert"><img src="oracle-agentic.png" alt="Oracle certificate"><div class="certText"><small>ORACLE</small><h3>AI Foundations &amp; Agentic AI</h3></div></div>
+<div class="card cert"><img src="snowflake.png" alt="Snowflake certificate"><div class="certText"><small>GEEKSFORGEEKS</small><h3>Intro to Snowflake</h3></div></div>
+<div class="card cert"><img src="agentic-ai.png" alt="Agentic AI certificate"><div class="certText"><small>ORACLE</small><h3>AI Foundations &amp; Agentic AI</h3></div></div>
+<div class="card cert"><img src="ai-healthcare.png" alt="AI Healthcare certificate"><div class="certText"><small>AI</small><h3>AI in Healthcare</h3></div></div>
+<div class="card cert"><img src="c-programming.png" alt="C Programming certificate"><div class="certText"><small>UNIVERSITY OF CALIFORNIA, SANTA CRUZ</small><h3>C for Everyone: Programming Fundamentals</h3></div></div>
+<div class="card cert"><img src="mysql.png" alt="MySQL certificate"><div class="certText"><small>META</small><h3>Database Structures and Management with MySQL</h3></div></div>
+<div class="card cert"><img src="data-analyst.png" alt="Data Analyst certificate"><div class="certText"><small>DATA</small><h3>Data Analyst Skill Certification</h3></div></div>
+</div></section>
+
+<section id="contact"><div class="contact"><div class="small">06 / CONTACT</div><h2 class="sectionTitle">Let's connect.</h2><p class="about">Feel free to connect with me and explore my work, projects and learning journey.</p></div></section>
+</main><footer>© 2026 Rohan Sharma. Built with curiosity.</footer>
+</body></html>
