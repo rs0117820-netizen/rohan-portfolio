@@ -8,92 +8,72 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#f6f3ee;--ink:#26313c;--muted:#68727c;--accent:#c97857;--line:#d9d4cc;--card:#fffdf9}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans",Arial,sans-serif}
-nav{height:78px;display:flex;align-items:center;justify-content:space-between;max-width:1260px;margin:auto;padding:0 28px;border-bottom:1px solid rgba(38,49,60,.08)}
-.logo{font:700 30px "Playfair Display",serif}.logo span{color:var(--accent)}
-.links{display:flex;gap:30px;align-items:center}.links a{text-decoration:none;color:#4e5963;font-size:15px}.links a:hover{color:var(--accent)}
-.wrap{max-width:1260px;padding:0 28px;margin:auto}.hero{min-height:770px;display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}
-.eyebrow{font-size:13px;font-weight:700;letter-spacing:2.5px;color:var(--accent);margin-bottom:28px}.hero h1{font:700 clamp(64px,8vw,112px)/.9 "Playfair Display",serif;letter-spacing:-5px;margin:0 0 24px}.hero p{max-width:680px;font-size:21px;line-height:1.75;color:#61707d;margin:0 0 34px}
-.buttons{display:flex;gap:14px;flex-wrap:wrap}.btn{display:inline-block;padding:18px 25px;border:1px solid #34414b;text-decoration:none;color:var(--ink);font-weight:700;border-radius:3px}.btn.primary{background:#26313c;color:white}.btn:hover{transform:translateY(-2px)}
-.photoWrap{position:relative;padding:18px 28px 36px 0}.photoShape{height:610px;border-radius:50% 50% 14px 14px/45% 45% 14px 14px;overflow:hidden;background:#e9e2d6;box-shadow:0 25px 60px rgba(49,42,33,.13)}.photoShape img{width:100%;height:100%;object-fit:cover;object-position:center top}.tag{position:absolute;right:-10px;bottom:58px;background:rgba(255,253,249,.96);padding:22px 30px;box-shadow:0 12px 35px rgba(38,49,60,.1);min-width:290px}.tag b{display:block;color:var(--accent);font-size:13px;letter-spacing:1.2px;margin-bottom:8px}.tag span{color:#55616d}
-section{padding:88px 0;border-top:1px solid var(--line)}.section-title{font:700 46px "Playfair Display",serif;margin:0 0 12px}.section-sub{color:var(--muted);font-size:17px;margin-bottom:40px}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card{background:var(--card);border:1px solid var(--line);padding:28px;transition:.2s}.card:hover{transform:translateY(-5px);box-shadow:0 18px 40px rgba(38,49,60,.08)}.card h3{font-size:21px;margin:8px 0 10px}.card p{color:var(--muted);line-height:1.65;margin:0}.pill{display:inline-block;color:var(--accent);font-weight:700;font-size:12px;letter-spacing:1px;text-transform:uppercase}
-.exp{display:grid;grid-template-columns:190px 1fr;gap:35px;padding:28px 0;border-bottom:1px solid var(--line)}.date{color:var(--accent);font-weight:700}.exp h3{margin:0 0 8px;font-size:22px}.exp p{margin:0;color:var(--muted);line-height:1.7}
-.cert img{width:100%;height:170px;object-fit:contain;background:#f3f1ed;border:1px solid var(--line);margin-bottom:16px}.cert h3{font-size:18px;margin:0 0 8px}
-.contact{background:#26313c;color:white;padding:70px 0}.contact .section-title{color:white}.contact p{color:#c7cdd2;font-size:18px}
-footer{padding:25px;text-align:center;color:var(--muted);font-size:14px}
-@media(max-width:850px){nav{height:auto;padding:20px 22px}.links{display:none}.wrap{padding:0 22px}.hero{grid-template-columns:1fr;min-height:auto;padding:70px 0}.hero h1{letter-spacing:-3px}.photoWrap{order:-1}.photoShape{height:480px}.grid{grid-template-columns:1fr}.exp{grid-template-columns:1fr;gap:8px}.tag{right:0;bottom:25px}.hero p{font-size:18px}}
+:root{--bg:#f8f7f3;--ink:#27313a;--muted:#66727d;--accent:#c97857;--cream:#eee6d8;--white:#fff;--line:#e1ddd5}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans",Arial,sans-serif}a{text-decoration:none;color:inherit}
+nav{height:80px;display:flex;align-items:center;justify-content:space-between;max-width:1260px;margin:auto;padding:0 28px;border-bottom:1px solid var(--line)}
+.logo{font:700 30px "Playfair Display",serif}.logo span{color:var(--accent)}.links{display:flex;gap:27px;color:#59636d;font-size:15px}.links a:hover{color:var(--accent)}
+.wrap{max-width:1260px;margin:auto;padding:0 28px}.hero{min-height:730px;display:grid;grid-template-columns:1.05fr .95fr;gap:70px;align-items:center}
+.eyebrow,.small{font-size:13px;font-weight:700;letter-spacing:2.5px;color:var(--accent)}.eyebrow{margin-bottom:28px}
+h1{font:700 clamp(68px,8vw,118px)/.92 "Playfair Display",serif;letter-spacing:-5px;margin:0 0 25px}.intro{font-size:20px;line-height:1.75;color:#61707d;max-width:700px}
+.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px}.btn{padding:17px 25px;border:1px solid #6d747b;font-weight:700;font-size:15px}.btn.primary{background:var(--ink);color:#fff;border-color:var(--ink)}
+.photoBox{position:relative;padding:20px 0 34px 40px}.photoBox:before{content:"";position:absolute;inset:35px 40px 0 0;background:var(--cream);border-radius:48% 48% 15px 15px}
+.photo{position:relative;width:100%;max-width:510px;height:610px;object-fit:cover;border-radius:48% 48% 10px 10px;display:block;margin-left:auto}.tag{position:absolute;right:0;bottom:62px;background:rgba(255,255,255,.96);padding:20px 25px;width:300px;box-shadow:0 10px 30px rgba(30,35,40,.08)}.tag b{display:block;color:var(--accent);font-size:14px;letter-spacing:.7px;margin-bottom:8px}.tag span{color:#55616b;font-size:15px}
+section{padding:85px 0;border-top:1px solid var(--line)}.sectionTitle{font:700 50px "Playfair Display",serif;margin:10px 0 35px}.about{font-size:19px;line-height:1.8;color:#5f6974;max-width:850px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:rgba(255,255,255,.65);border:1px solid var(--line);padding:26px}.card small{color:var(--accent);font-weight:700;letter-spacing:1px}.card h3{margin:10px 0;font-size:21px}.card p{margin:0;color:#66717c;line-height:1.65}
+.timeline{display:grid;gap:18px}.job{background:#fffdf9;border:1px solid var(--line);padding:28px;display:grid;grid-template-columns:190px 1fr;gap:30px}.job .date{color:var(--accent);font-weight:700;font-size:14px;line-height:1.6}.job h3{margin:0 0 8px;font-size:22px}.job p{margin:0;color:#65707b;line-height:1.7}
+.cert{padding:0;overflow:hidden}.cert img{width:100%;height:185px;object-fit:cover;display:block;border-bottom:1px solid var(--line)}.certText{padding:20px}.certText h3{margin:8px 0 0}
+.contact{background:var(--cream);padding:55px}.contact .sectionTitle{margin-bottom:15px}footer{text-align:center;padding:30px;border-top:1px solid var(--line);color:#78818a}
+@media(max-width:850px){nav{padding:0 22px}.links{display:none}.wrap{padding:0 22px}.hero{grid-template-columns:1fr;gap:20px;padding:50px 0;min-height:auto}h1{letter-spacing:-3px}.photo{height:480px}.photoBox{padding-left:10px}.tag{bottom:25px}.grid{grid-template-columns:1fr}.job{grid-template-columns:1fr;gap:8px}.sectionTitle{font-size:40px}}
 </style>
 </head>
 <body>
-<nav>
-  <div class="logo">Rohan<span>.</span></div>
-  <div class="links">
-    <a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a>
-    <a href="#projects">Projects</a><a href="#certificates">Certificates</a><a href="#contact">Contact</a>
-    <a href="Rohan_Sharma_CV.docx" download>Download CV</a>
-  </div>
-</nav>
+<nav><a class="logo" href="#">Rohan<span>.</span></a><div class="links">
+<a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#certificates">Certificates</a><a href="#contact">Contact</a><a href="Rohan_Sharma_CV.docx" download>Download CV</a>
+</div></nav>
 
-<main>
-<div class="wrap hero" id="about">
-  <div>
-    <div class="eyebrow">HELLO, I'M</div>
-    <h1>Rohan<br>Sharma<span style="color:var(--accent)">.</span></h1>
-    <p>An AI & Machine Learning student who enjoys building practical solutions with Python, Java, data and intelligent systems. I am continuously learning, experimenting and turning ideas into projects.</p>
-    <div class="buttons">
-      <a class="btn primary" href="#projects">View My Work</a>
-      <a class="btn" href="Rohan_Sharma_CV.docx" download>Download My CV ↓</a>
-      <a class="btn" href="#contact">Get In Touch</a>
-    </div>
-  </div>
-  <div class="photoWrap">
-    <div class="photoShape"><img src="rohan.jpg" alt="Rohan Sharma"></div>
-    <div class="tag"><b>AI & ML STUDENT</b><span>Python · Java · Data · Intelligent Systems</span></div>
-  </div>
+<main class="wrap">
+<section class="hero" style="border-top:0">
+<div><div class="eyebrow">HELLO, I'M</div><h1>Rohan<br>Sharma<span style="color:var(--accent)">.</span></h1>
+<p class="intro">An AI &amp; Machine Learning student who enjoys building practical solutions with Python, data and intelligent systems. I am continuously learning, experimenting and turning ideas into projects.</p>
+<div class="actions"><a class="btn primary" href="#projects">View My Work</a><a class="btn" href="Rohan_Sharma_CV.docx" download>Download My CV ↓</a><a class="btn" href="#contact">Get In Touch</a></div></div>
+<div class="photoBox"><img class="photo" src="rohan.jpg" alt="Rohan Sharma"><div class="tag"><b>AI &amp; ML STUDENT</b><span>Python • Data • Intelligent Systems</span></div></div>
+</section>
+
+<section id="about"><div class="small">01 / ABOUT</div><h2 class="sectionTitle">A little about me.</h2><p class="about">A passionate, curious, and ambitious learner with an innovative mindset and a growing interest in AI, technology, and data. I enjoy exploring creative ideas, building practical projects, and continuously improving my technical and professional skills.</p></section>
+
+<section id="skills"><div class="small">02 / SKILLS</div><h2 class="sectionTitle">What I work with.</h2><div class="grid">
+<div class="card"><small>PROGRAMMING</small><h3>Python, C &amp; Java</h3><p>Building practical programs and strengthening problem-solving skills.</p></div>
+<div class="card"><small>DATA</small><h3>SQL &amp; MySQL</h3><p>Working with databases, queries and structured information.</p></div>
+<div class="card"><small>AI</small><h3>AI &amp; Machine Learning</h3><p>Exploring intelligent systems, data analytics and modern AI technologies.</p></div>
+</div></section>
+
+<section id="experience"><div class="small">03 / EXPERIENCE</div><h2 class="sectionTitle">Experience.</h2><div class="timeline">
+<div class="job"><div class="date">2026<br>6 WEEKS • IN PROGRESS</div><div><h3>IBM SkillsBuild — Data Analytics with AI Intern</h3><p>Currently pursuing the IBM SkillsBuild Data Analytics with AI Internship, a 6-week virtual internship in collaboration with AICTE and BharatCares, gaining hands-on exposure to data analytics and AI-related skills.</p></div></div>
+<div class="job"><div class="date">2026<br>SUCCESSCV</div><div><h3>SuccessCV — Team &amp; Platform Contributor</h3><p>Worked with the SuccessCV team on an AI-powered career platform featuring AI Resume Builder, AI Resume Analysis &amp; ATS Score, Resume-Based Job Recommendations and a Personalized Career Roadmap. Also participated in the Ad-Craft Challenge 2026 and promoted the submission on LinkedIn.</p></div></div>
+<div class="job"><div class="date">2026<br>6 MONTHS</div><div><h3>Campus Ambassador — Google Gemini</h3><p>Representing Google Gemini on campus and helping promote awareness, learning and engagement around AI and Gemini.</p></div></div>
+</div></section>
+
+<section id="projects"><div class="small">04 / SELECTED WORK</div><h2 class="sectionTitle">Projects.</h2><div class="grid">
+<div class="card"><small>FEATURED PROJECT</small><h3>Echo AI</h3><p>An intelligent voice assistant designed to understand natural interaction and assist with useful tasks.</p></div>
+<div class="card"><small>IBM SKILLSBUILD</small><h3>Data Analytics with AI</h3><p>Worked on practical data analytics and AI learning projects through the IBM SkillsBuild program, applying analytical thinking and AI concepts.</p></div>
+<div class="card"><small>GOOGLE GEMINI</small><h3>Gemini Campus Initiative</h3><p>Represented and promoted Google Gemini on campus while exploring AI tools, practical use cases and emerging technologies.</p></div>
+</div></section>
+
+<section id="certificates"><div class="small">05 / LEARNING</div><h2 class="sectionTitle">Certificates.</h2><div class="grid">
+<div class="card cert"><img src="oracle-agentic.png" alt="Oracle certificate"><div class="certText"><small>ORACLE</small><h3>AI Foundations &amp; Agentic AI</h3></div></div>
+<div class="card cert"><img src="snowflake.png" alt="Snowflake certificate"><div class="certText"><small>GEEKSFORGEEKS</small><h3>Intro to Snowflake</h3></div></div>
+<div class="card cert"><img src="agentic-ai.png" alt="Agentic AI certificate"><div class="certText"><small>ORACLE</small><h3>AI Foundations &amp; Agentic AI</h3></div></div>
+<div class="card cert"><img src="ai-healthcare.png" alt="AI Healthcare certificate"><div class="certText"><small>AI</small><h3>AI in Healthcare</h3></div></div>
+<div class="card cert"><img src="c-programming.png" alt="C Programming certificate"><div class="certText"><small>UNIVERSITY OF CALIFORNIA, SANTA CRUZ</small><h3>C for Everyone: Programming Fundamentals</h3></div></div>
+<div class="card cert"><img src="mysql.png" alt="MySQL certificate"><div class="certText"><small>META</small><h3>Database Structures and Management with MySQL</h3></div></div>
+<div class="card cert"><img src="data-analyst.png" alt="Data Analyst certificate"><div class="certText"><small>DATA</small><h3>Data Analyst Skill Certification</h3></div></div>
+</div></section>
+
+<section id="contact"><div class="contact"><div class="small">06 / CONTACT</div><h2 class="sectionTitle">Let's connect.</h2><p class="about">Feel free to connect with me and explore my work, projects and learning journey.</p></div>
+<div class="contact-info" style="margin-top:22px;display:flex;flex-wrap:wrap;gap:14px;justify-content:center;">
+  <a href="mailto:rs0117820@gmail.com" style="text-decoration:none;">📧 rs0117820@gmail.com</a>
+  <a href="tel:+919239798983" style="text-decoration:none;">📱 +91 92397 98983</a>
 </div>
-
-<section id="skills"><div class="wrap">
-<h2 class="section-title">Skills & Technologies</h2><p class="section-sub">Technologies I use while learning and building projects.</p>
-<div class="grid">
-<div class="card"><span class="pill">Programming</span><h3>Python & Java</h3><p>Building problem-solving and application-focused projects using core programming concepts.</p></div>
-<div class="card"><span class="pill">Data</span><h3>SQL & MySQL</h3><p>Working with databases, queries and structured data for practical applications.</p></div>
-<div class="card"><span class="pill">AI</span><h3>AI & Machine Learning</h3><p>Exploring machine learning, agentic AI, data analysis and intelligent systems.</p></div>
-<div class="card"><span class="pill">Soft Skills</span><h3>Professional Strengths</h3><p>Problem Solving • Communication • Teamwork • Leadership • Adaptability • Time Management • Continuous Learning</p></div>
-</div></div></section>
-
-<section id="experience"><div class="wrap">
-<h2 class="section-title">Experience</h2><p class="section-sub">Learning experiences, programs and professional development.</p>
-<div class="exp"><div class="date">6 WEEKS · IBM</div><div><h3>IBM SkillsBuild Internship</h3><p>Completed a 6-week internship focused on industry-oriented learning, practical technology skills and professional development.</p></div></div>
-<div class="exp"><div class="date">6 MONTHS · GOOGLE GEMINI</div><div><h3>Google Gemini Campus Experience</h3><p>Engaged in a 6-month experience focused on generative AI, practical AI applications, campus engagement and emerging technologies.</p></div></div>
-<div class="exp"><div class="date">3 MONTHS · SUCCESSCV</div><div><h3>SuccessCV Internship</h3><p>Completed a 3-month internship experience contributing to a CV and career-focused platform while developing practical project and professional skills.</p></div></div>
-</div></section>
-
-<section id="projects"><div class="wrap">
-<h2 class="section-title">Projects</h2><p class="section-sub">A selection of technical and academic work.</p>
-<div class="grid">
-<div class="card"><span class="pill">AI PROJECT</span><h3>Echo AI</h3><p>An innovative, intelligent, and interactive AI-powered voice assistant designed to understand natural language, deliver quick and accurate responses, and support useful everyday tasks through a smooth and user-friendly experience.</p></div>
-<div class="card"><span class="pill">WEB PROJECT</span><h3>Website Disaster Management System</h3><p>A responsive, informative, and user-friendly web-based disaster management system designed to provide essential information, promote emergency awareness, and help users access important resources and support during critical situations.</p></div>
-</div></div></section>
-
-<section id="certificates"><div class="wrap">
-<h2 class="section-title">Certificates</h2><p class="section-sub">My certifications and completed learning programs.</p>
-<div class="grid">
-<div class="card cert"><img src="oracle-agentic.png" alt="Oracle certificate"><h3>Oracle AI Foundations & Agentic AI</h3><span class="pill">Oracle</span></div>
-<div class="card cert"><img src="snowflake.png" alt="Snowflake certificate"><h3>Intro to Snowflake</h3><span class="pill">GeeksforGeeks</span></div>
-<div class="card cert"><img src="data-analyst.png" alt="Data Analyst certificate"><h3>Data Analyst Certification</h3><span class="pill">Data Analytics</span></div>
-<div class="card cert"><img src="agentic-ai.png" alt="Agentic AI certificate"><h3>Agentic AI</h3><span class="pill">Artificial Intelligence</span></div>
-<div class="card cert"><img src="ai-healthcare.png" alt="AI in Healthcare certificate"><h3>AI in Healthcare</h3><span class="pill">Artificial Intelligence</span></div>
-<div class="card cert"><img src="mysql.png" alt="MySQL certificate"><h3>Database Structures and Management with MySQL</h3><span class="pill">Database</span></div>
-<div class="card cert"><img src="c-programming.png" alt="C Programming certificate"><h3>C Programming</h3><span class="pill">Programming</span></div>
-</div></div></section>
-
-<section class="contact" id="contact"><div class="wrap">
-<h2 class="section-title">Let's work together.</h2>
-<p>Interested in connecting, collaborating or discussing technology and AI projects?</p>
-<div class="buttons"><a class="btn" style="border-color:#fff;color:#fff" href="mailto:your-email@example.com">Get In Touch</a></div>
-</div></section>
-</main>
-<footer>© 2026 Rohan Sharma · Portfolio</footer>
+</section>
+</main><footer>© 2026 Rohan Sharma. Built with curiosity.</footer>
 </body></html>
